@@ -126,3 +126,18 @@ ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
 ino <up> <Nop>
+
+" ================= My Settings ===========================
+set t_Co=256
+let g:solarized_termcolors=256
+syntax enable
+set background=dark
+colorscheme solarized
+" let g:nerdtree_tabs_open_on_console_startup=1
+" :au FocusLost * :wa
+augroup helpfiles
+  au!
+  au BufRead,BufEnter */doc/* wincmd L
+augroup END
+autocmd BufWritePre * :%s/\s\+$//e
+nnoremap / /\v

@@ -129,3 +129,7 @@
 	clean = git media clean %f
 	smudge = git media smudge %f
 	required = true
+[github]
+	user = sevenmaxis
+[ghi]
+	token = 05079352429cf17927d0d19f75bfecd6b4ed36d4

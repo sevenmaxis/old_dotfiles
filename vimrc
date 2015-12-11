@@ -29,7 +29,7 @@ syntax on
 
 " Change leader to a comma because the backslash is too far away
 " That means all \x commands turn into ,x
-" The mapleader has to be set before vundle starts loading all 
+" The mapleader has to be set before vundle starts loading all
 " the plugins.
 let mapleader=","
 
@@ -134,6 +134,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 " let g:nerdtree_tabs_open_on_console_startup=1
+let NERDTreeChDirMode=1
 " :au FocusLost * :wa
 augroup helpfiles
   au!
@@ -141,3 +142,4 @@ augroup helpfiles
 augroup END
 autocmd BufWritePre * :%s/\s\+$//e
 nnoremap / /\v
+nmap ; :

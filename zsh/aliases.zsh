@@ -215,3 +215,8 @@ alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune &&
 # Personal
 alias mkcd="mkdcd"
 alias p="pass -c"
+alias work="cd ~/Work"
+alias test="cd ~/Work/test"
+alias down="cd ~/Downloads"
+alias am='ae; ar && echo "alieses.zsh has been reloaded"'
+alias yadr="cd $yadr"

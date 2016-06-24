@@ -39,7 +39,7 @@ elif [[ $platform == 'darwin' ]]; then
   # alias ll='ls -alGh'
   export CLICOLOR=true
   export CLICOLOR_FORCE=true
-  function ll { ls -la $@ | grep -v '.DS_Store|.localized'; }
+  function ll { ls -la $@ | ag -v '.DS_Store|.localized'; }
   alias ls='ls -Gh'
 fi
 

@@ -211,3 +211,8 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
+
+# Personal
+ alias p="pass -c"
+ alias am='ae; ar && echo "alieses.zsh has been reloaded"'
+ alias sdn="say \'done\'"

@@ -36,10 +36,7 @@ if [[ $platform == 'linux' ]]; then
   alias ll='ls -alh --color=auto'
   alias ls='ls --color=auto'
 elif [[ $platform == 'darwin' ]]; then
-  # alias ll='ls -alGh'
-  export CLICOLOR=true
-  export CLICOLOR_FORCE=true
-  function ll { ls -alGh $@ | ag -v '.DS_Store|.localized'; }
+  alias ll='ls -alGh'
   alias ls='ls -Gh'
 fi
 
@@ -81,11 +78,11 @@ alias gsh='git show'
 alias gshw='git show'
 alias gshow='git show'
 alias gi='vim .gitignore'
-alias gcm='git ci -m'  # ci commit
-alias gcim='git ci -m' # ci commit
-alias gci='git ci'     # ci commit
-alias gco='git co'     # co checkout
-alias gcp='git cp'     # cp cherry-pick -x
+alias gcm='git ci -m'
+alias gcim='git ci -m'
+alias gci='git ci'
+alias gco='git co'
+alias gcp='git cp'
 alias ga='git add -A'
 alias gap='git add -p'
 alias guns='git unstage'
@@ -100,52 +97,10 @@ alias gr='git rebase'
 alias gra='git rebase --abort'
 alias ggrc='git rebase --continue'
 alias gbi='git rebase --interactive'
-alias gl='git l'      # log --graph --date=short
-alias glg='git l'     # log --graph --date=short
-alias glog='git l'    # log --graph --date=short
-alias co='git co'     # co checkout
-alias.a add
-alias.chunkyadd add --patch
-alias.snapshot !git stash save snapshot: $(date) && git stash apply stash@{0}
-alias.snapshots !git stash list --grep snapshot
-alias.recent-branches !git for-each-ref --count=15 --sort=-committerdate refs/heads/ --format='%(refname:short)'
-alias.b branch -v
-alias.c commit -m
-alias.ca commit -am
-alias.ci commit
-alias.amend commit --amend
-alias.ammend commit --amend
-alias.co checkout
-alias.nb checkout -b
-alias.cp cherry-pick -x
-alias.d diff
-alias.dc diff --cached
-alias.last diff HEAD^
-alias.l log --graph --date=short
-alias.changes log --pretty=format:"%h %cr %cn %Cgreen%s%Creset" --name-status
-alias.short log --pretty=format:"%h %cr %cn %Cgreen%s%Creset"
-alias.simple log --pretty=format:" * %s"
-alias.shortnocolor log --pretty=format:"%h %cr %cn %s"
-alias.pl pull
-alias.ps push
-alias.rc rebase --continue
-alias.rs rebase --skip
-alias.r remote -v
-alias.unstage reset HEAD
-alias.uncommit reset --soft HEAD^
-alias.filelog log -u
-alias.mt mergetool
-alias.ss stash
-alias.sl stash list
-alias.sa stash apply
-alias.sd stash drop
-alias.s status
-alias.st status
-alias.stat status
-alias.t tag -n
-alias.svnr svn rebase
-alias.svnd svn dcommit
-alias.svnl svn log --oneline --show-commit
+alias gl='git l'
+alias glg='git l'
+alias glog='git l'
+alias co='git co'
 alias gf='git fetch'
 alias gfp='git fetch --prune'
 alias gfa='git fetch --all'
@@ -256,15 +211,3 @@ alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
 alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune && brew doctor'
-
-# Personal
-alias mkcd="mkdcd"
-alias p="pass -c"
-alias work="cd ~/Work"
-alias test="cd ~/Work/test"
-alias down="cd ~/Downloads"
-alias am='ae; ar && echo "alieses.zsh has been reloaded"'
-alias yadr="cd $yadr"
-alias biti="cd ~/BitSync/iPad"
-alias bita="cd ~/BitSyc/Android"
-alias sdn="say \'done\'"

@@ -135,7 +135,6 @@ syntax enable
 set background=dark
 colorscheme solarized
 " let g:nerdtree_tabs_open_on_console_startup=1
-let NERDTreeChDirMode=1
 " :au FocusLost * :wa
 augroup helpfiles
   au!

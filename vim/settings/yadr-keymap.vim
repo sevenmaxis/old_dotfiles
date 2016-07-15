@@ -72,6 +72,7 @@ nnoremap ,. '.
 " the first quote will autoclose so you'll get 'foo' and hitting <c-a> will
 " put the cursor right after the quote
 imap <C-a> <esc>wa
+imap <C-q> <esc>o
 
 " ==== NERD tree
 " Open the project tree and expose current file in the nerdtree with Ctrl-\

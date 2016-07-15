@@ -135,7 +135,7 @@ syntax enable
 set background=dark
 colorscheme solarized
 " let g:nerdtree_tabs_open_on_console_startup=1
-" :au FocusLost * :wa
+autocmd BufLeave,FocusLost * silent! wa
 augroup helpfiles
   au!
   au BufRead,BufEnter */doc/* wincmd L

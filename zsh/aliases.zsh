@@ -36,7 +36,7 @@ if [[ $platform == 'linux' ]]; then
   alias ll='ls -alh --color=auto'
   alias ls='ls --color=auto'
 elif [[ $platform == 'darwin' ]]; then
-  alias ll='ls -alGh'
+  function ll { ls -alGh $@ | ag -v '.DS_Store|.localized';}
   alias ls='ls -Gh'
 fi
 

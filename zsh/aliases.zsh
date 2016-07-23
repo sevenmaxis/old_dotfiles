@@ -219,3 +219,14 @@ alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune &&
  alias p="pass -c"
  alias am='ae; ar && echo "alieses.zsh has been reloaded"'
  alias sdn="say \'done\'"
+
+ # Translate Shell
+function tr {
+  case "$*" in
+    [A-Za-z]* ) trans -sp -b en:ru $*;
+      ;;
+    [А-Яа-я]* ) trans -p -b ru:en $*;
+      ;;
+    *)          echo "wrong language"
+  esac
+ }

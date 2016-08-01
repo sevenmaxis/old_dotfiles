@@ -239,3 +239,6 @@ function aria2c {
   launch_caffeinate&
   command aria2c "$*"
 }
+
+alias blueon="blueutil power 1"
+alias blueoff="blueutil power 0"

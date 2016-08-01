@@ -220,12 +220,12 @@ alias brewu='brew update  && brew upgrade --all && brew cleanup && brew prune &&
  alias am='ae; ar && echo "alieses.zsh has been reloaded"'
  alias sdn="say \'done\'"
 
- # Translate Shell
-function tr {
+# Translate Shell
+function t {
   case "$*" in
-    [A-Za-z]* ) trans -sp -b en:ru $*;
+    [A-Za-z]* ) trans -sp en:ru $*
       ;;
-    [А-Яа-я]* ) trans -p -b ru:en $*;
+    [А-Яа-я]* ) trans -p ru:en $*
       ;;
     *)          echo "wrong language"
   esac

@@ -229,4 +229,13 @@ function t {
       ;;
     *)          echo "wrong language"
   esac
- }
+}
+
+function aria2c {
+  function launch_caffeinate {
+    sleep 2
+    caffeinate -i -w $(pgrep 'aria2c')
+  }
+  launch_caffeinate&
+  command aria2c "$*"
+}

@@ -242,3 +242,5 @@ function aria2c {
 
 alias blueon="blueutil power 1"
 alias blueoff="blueutil power 0"
+
+alias pb="tr -d '\n' | pbcopy"

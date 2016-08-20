@@ -146,4 +146,4 @@ autocmd BufWritePre * :%s/\s\+$//e
 nnoremap / /\v
 nmap ; :
 command! -nargs=* -complete=shellcmd R new | setlocal buftype=nofile bufhidden=hide noswapfile | r !<args>
-
+set clipboard=unnamed

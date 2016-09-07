@@ -31,6 +31,8 @@ task :install => [:submodule_init, :submodules] do
 
   install_term_theme if RUBY_PLATFORM.downcase.include?("darwin")
 
+  install_atom
+
   run_bundle_config
 
   success_msg("installed")
@@ -109,6 +111,15 @@ task :install_vundle do
   end
 
   Vundle::update_vundle
+end
+
+desc "Install Atom editor"
+task :install_atom do
+  puts "======================================================"
+  puts "Installing and updating atom."
+  puts "======================================================"
+
+  run %{brew cask install atom}
 end
 
 task :default => 'install'

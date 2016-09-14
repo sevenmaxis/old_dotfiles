@@ -36,7 +36,9 @@ if [[ $platform == 'linux' ]]; then
   alias ll='ls -alh --color=auto'
   alias ls='ls --color=auto'
 elif [[ $platform == 'darwin' ]]; then
+  unalias ll 2>/dev/null
   function ll { ls -alGh $@ | ag -v '.DS_Store|.localized';}
+  alias l='ll'
   alias ls='ls -Gh'
 fi
 
@@ -138,7 +140,7 @@ alias gdmb='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 # Common shell functions
 alias less='less -r'
 alias tf='tail -f'
-alias l='less'
+# alias l='less'
 alias lh='ls -alt | head' # see the last modified files
 alias screen='TERM=screen screen'
 alias cl='clear'

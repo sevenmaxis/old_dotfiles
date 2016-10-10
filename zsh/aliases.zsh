@@ -245,6 +245,9 @@ function aria2c {
 alias blueon="blueutil power 1"
 alias blueoff="blueutil power 0"
 
+alias c="pbcopy"
+alias v="pbpaste"
+
 alias pb="tr -d '\n' | pbcopy"
 
 function rails() {

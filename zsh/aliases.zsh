@@ -285,3 +285,6 @@ mktouch() {
     touch -- "$f"
   done
 }
+
+BUNDLER_EDITOR=atom
+alias atom="atom -n"

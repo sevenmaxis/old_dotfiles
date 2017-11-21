@@ -288,3 +288,7 @@ mktouch() {
 
 BUNDLER_EDITOR=atom
 alias atom="atom -n"
+
+if command -v tmux>/dev/null; then
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi

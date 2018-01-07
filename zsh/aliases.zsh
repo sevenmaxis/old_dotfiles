@@ -292,7 +292,7 @@ BUNDLER_EDITOR=atom
 alias atom="atom -n"
 
 if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && [[ $TERM_PROGRAM == 'iTerm.app' ]] && exec tmux
 fi
 
 alias nv=nvim

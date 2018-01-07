@@ -16,7 +16,6 @@ call vundle#rc()
 
 " let Vundle manage Vundle (required)
 Bundle "gmarik/vundle"
-Plugin 'Valloric/YouCompleteMe' => https://github.com/Valloric/YouCompleteMe.git
 " YADR's vundles are split up by category into smaller files
 " This reduces churn and makes it easier to fork. See
 " ~/.vim/vundles/ to edit them:

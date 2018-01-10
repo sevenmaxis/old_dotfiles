@@ -142,9 +142,6 @@ call plug#begin('~/.config/nvim/plugged')
 	" set a map leader for more key combos
 	let mapleader = ','
 
-	" remap esc
-	inoremap jk <esc>
-
 	" wipout buffer
 	nmap <silent> <leader>b :bw<cr>
 
@@ -321,7 +318,7 @@ call plug#begin('~/.config/nvim/plugged')
 		function! ToggleNerdTree()
 			if @% != "" && (!exists("g:NERDTree") || (g:NERDTree.ExistsForTab() && !g:NERDTree.IsOpen()))
 				:NERDTreeFind
-			else 
+			else
 				:NERDTreeToggle
 			endif
 		endfunction

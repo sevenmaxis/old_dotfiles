@@ -93,7 +93,7 @@ call plug#begin('~/.config/nvim/plugged')
 	set foldlevel=1
 
 	" toggle invisible characters
-	set list
+	set nolist
 	set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
 	set showbreak=↪
 

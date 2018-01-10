@@ -16,6 +16,3 @@ bin/subl
 tags
 
 config/nvim/plugged/*
-config/nvim/ftplugin/*
-config/nvim/plugin/*
-config/nvim/ftdetect/*

@@ -443,6 +443,10 @@ call plug#begin('~/.config/nvim/plugged')
 		Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		let g:deoplete#enable_at_startup = 1
 	" }}}
+
+  " Eunuch - Rename/remove files from within vim {{{
+		Plug 'tpope/vim-eunuch'
+  " }}}
 " }}}
 
 " Language-Specific Configuration {{{

@@ -267,8 +267,8 @@ call plug#begin('~/.config/nvim/plugged')
 	" substitute, search, and abbreviate multiple variants of a word
 	Plug 'tpope/vim-abolish'
 
-	" search inside files using ack. Same as command line ack utility, but use :Ack
-	Plug 'mileszs/ack.vim'
+	" search inside files using ag
+	Plug 'rking/ag.vim'
 
 	" insert or delete brackets, parens, quotes in pair
 	Plug 'jiangmiao/auto-pairs'

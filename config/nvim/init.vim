@@ -391,12 +391,12 @@ call plug#begin('~/.config/nvim/plugged')
 
 	" signify {{{
 	    " Plug 'airblade/vim-gitgutter'
-	    Plug 'mhinz/vim-signify'
-	    let g:signify_vcs_list = [ 'git' ]
-	    let g:signify_sign_add               = '+'
-	    let g:signify_sign_delete            = '_'
-	    let g:signify_sign_delete_first_line = '‾'
-	    let g:signify_sign_change = '!'
+	    " Plug 'mhinz/vim-signify'
+	    " let g:signify_vcs_list = [ 'git' ]
+	    " let g:signify_sign_add               = '+'
+	    " let g:signify_sign_delete            = '_'
+	    " let g:signify_sign_delete_first_line = '‾'
+	    " let g:signify_sign_change = '!'
 	" }}}
 
 	" vim-fugitive {{{
@@ -411,7 +411,7 @@ call plug#begin('~/.config/nvim/plugged')
 	" ALE {{{
 		Plug 'w0rp/ale' " Asynchonous linting engine
 		let g:ale_change_sign_column_color = 1
-		let g:ale_sign_column_always = 1
+		let g:ale_sign_column_always = 0
 		let g:ale_sign_error = '✖'
 		let g:ale_sign_warning = '⚠'
 

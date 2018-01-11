@@ -14,6 +14,11 @@ call plug#begin('~/.config/nvim/plugged')
 	abbr cosnt const
 	abbr attribtue attribute
 	abbr attribuet attribute
+  iabbrev >> →
+  iabbrev << ←
+  iabbrev ^^ ↑
+  iabbrev vv ↓
+  iabbrev aa λ
 
 	set autoread " detect when a file is changed
 

@@ -324,7 +324,6 @@ call plug#begin('~/.config/nvim/plugged')
 	" NERDTree {{{
 		Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] }
 		Plug 'Xuyuanp/nerdtree-git-plugin'
-		Plug 'ryanoasis/vim-devicons'
 
 		" Toggle NERDTree
 		function! ToggleNerdTree()

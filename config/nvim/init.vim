@@ -242,6 +242,10 @@ call plug#begin('~/.config/nvim/plugged')
 	" Yank from cursor to end of line {{{
 	nnoremap Y y$
 	" }}}
+
+  " Tab switch by tab key
+  nmap <tab> gt
+  nmap <s-tab> gT
 " }}}
 
 " AutoGroups {{{

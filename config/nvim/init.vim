@@ -22,6 +22,11 @@ call plug#begin('~/.config/nvim/plugged')
 
 	set autoread " detect when a file is changed
 
+  " Turn Off Swap Files
+  set noswapfile
+  set nobackup
+  set nowb
+
 	set history=1000 " change history to 1000
 	set textwidth=120
 

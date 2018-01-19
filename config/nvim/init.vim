@@ -19,6 +19,8 @@ call plug#begin('~/.config/nvim/plugged')
   iabbrev ^^ ↑
   iabbrev vv ↓
   iabbrev aa λ
+  cabbrev E Explore
+  cabbrev V Vexplore
 
 	set autoread " detect when a file is changed
 

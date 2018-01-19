@@ -185,6 +185,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 	nmap <leader>l :set list!<cr>
 
+  nmap <leader>n :set number! relativenumber!<cr>
+
 	" Textmate style indentation
 	vmap <leader>[ <gv
 	vmap <leader>] >gv

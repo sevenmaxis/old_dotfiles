@@ -534,6 +534,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
 	Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 	Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }
+  Plug 'ervandew/supertab'
 " }}}
 
 call plug#end()

@@ -413,6 +413,16 @@ call plug#begin('~/.config/nvim/plugged')
 		command! -bang -nargs=* Find call fzf#vim#grep(
 			\ 'rg --column --line-number --no-heading --follow --color=always '.<q-args>, 1,
 			\ <bang>0 ? fzf#vim#with_preview('up:60%') : fzf#vim#with_preview('right:50%:hidden', '?'), <bang>0)
+
+    " Open files in horizontal split
+    nnoremap <silent> <Leader>s :call fzf#run({
+    \   'down': '40%',
+    \   'sink': 'botright split' })<CR>
+
+    " Open files in vertical horizontal split
+    nnoremap <silent> <Leader>v :call fzf#run({
+    \   'right': winwidth('.') / 2,
+    \   'sink':  'vertical botright split' })<CR>
 	" }}}
 
 	" signify {{{

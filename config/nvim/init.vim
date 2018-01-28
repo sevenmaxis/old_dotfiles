@@ -548,6 +548,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 	Plug 'kchmck/vim-coffee-script', { 'for': 'coffeescript' }
   Plug 'ervandew/supertab'
+  let g:SuperTabDefaultCompletionType = "<c-n>"
 " }}}
 
 call plug#end()

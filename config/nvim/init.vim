@@ -471,6 +471,10 @@ call plug#begin('~/.config/nvim/plugged')
   " Eunuch - Rename/remove files from within vim {{{
 		Plug 'tpope/vim-eunuch'
   " }}}
+
+  " Close buffers without closing windows {{{
+    Plug 'qpkorr/vim-bufkill'
+  " }}}
 " }}}
 
 " Language-Specific Configuration {{{

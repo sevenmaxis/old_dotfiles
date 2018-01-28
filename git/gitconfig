@@ -136,3 +136,5 @@
 [user]
 	email = sevenmaxis@gmail.com
 	name = Sergey Gopkalo
+[credential]
+	helper = osxkeychain

@@ -255,6 +255,10 @@ call plug#begin('~/.config/nvim/plugged')
   " Tab switch by tab key
   nmap <tab> gt
   nmap <s-tab> gT
+
+  " Remap record macro key
+  nnoremap Q q
+  nnoremap q <Nop>
 " }}}
 
 " AutoGroups {{{

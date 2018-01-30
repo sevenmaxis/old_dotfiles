@@ -23,6 +23,7 @@ call plug#begin('~/.config/nvim/plugged')
   cabbrev V Vexplore
 
 	set autoread " detect when a file is changed
+  set autowrite
 
   " Turn Off Swap Files
   set noswapfile

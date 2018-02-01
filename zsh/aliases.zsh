@@ -288,13 +288,13 @@ if command -v tmux>/dev/null; then
   [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && [[ $TERM_PROGRAM == 'iTerm.app' ]] && exec tmux
 fi
 
-e() {
+unalias e
+function e() {
   if [ $# -lt 1 ]; then
     echo "Missing an argument"
     return 1;
   fi
-
-  echo "$1"
+  printf '%s\n' "${(P)1}"
 }
 
 alias nv=nvim

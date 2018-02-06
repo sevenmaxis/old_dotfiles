@@ -288,7 +288,7 @@ if command -v tmux>/dev/null; then
   [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && [[ $TERM_PROGRAM == 'iTerm.app' ]] && exec tmux
 fi
 
-unalias e
+unalias e &>/dev/null
 function e() {
   if [ $# -lt 1 ]; then
     echo "Missing an argument"

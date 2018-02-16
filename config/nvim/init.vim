@@ -549,9 +549,25 @@ call plug#begin('~/.config/nvim/plugged')
 	" JSON {{{
 		Plug 'elzr/vim-json', { 'for': 'json' }
 		let g:vim_json_syntax_conceal = 0
+  " }}}
+
+  " Go {{{
+    Plug 'fatih/vim-go', { 'for': 'go' }
+    Plug 'jnwhiteh/vim-golang'
+		Plug 'sebdah/vim-delve'
+    let g:go_highlight_functions = 1
+    let g:go_highlight_methods = 1
+    let g:go_highlight_structs = 1
+    let g:go_highlight_operators = 1
+    let g:go_highlight_build_constraints = 1
+    let g:go_highlight_types = 1
+    let g:go_highlight_fields = 1
+    let g:go_highlight_extra_types = 1
+    let g:go_highlight_operators = 1
+    let g:go_highlight_build_constraints = 1
+    autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=3 shiftwidth=3
 	" }}}
 
-	Plug 'fatih/vim-go', { 'for': 'go' }
 	Plug 'timcharper/textile.vim', { 'for': 'textile' }
 	Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
 	Plug 'tpope/vim-endwise', { 'for': 'ruby' }

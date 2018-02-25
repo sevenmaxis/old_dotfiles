@@ -577,6 +577,7 @@ call plug#begin('~/.config/nvim/plugged')
   let g:SuperTabDefaultCompletionType = "<c-n>"
 
   Plug 'christoomey/vim-tmux-navigator'
+  Plug 'sjl/vitality.vim'
 " }}}
 
 call plug#end()

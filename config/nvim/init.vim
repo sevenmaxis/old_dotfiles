@@ -338,10 +338,7 @@ call plug#begin('~/.config/nvim/plugged')
 	" extended % matching
 	Plug 'vim-scripts/matchit.zip'
 
-	" detect indent style (tabs vs. spaces)
-	Plug 'tpope/vim-sleuth'
-
-    " Writing in vim {{{{
+  " Writing in vim {{{{
 		Plug 'junegunn/limelight.vim'
 		Plug 'junegunn/goyo.vim'
 		let g:limelight_conceal_ctermfg = 240

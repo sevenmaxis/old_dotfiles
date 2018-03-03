@@ -458,11 +458,12 @@ call plug#begin('~/.config/nvim/plugged')
 	" }}}
 
 	" ALE {{{
-		Plug 'w0rp/ale' " Asynchonous linting engine
-		let g:ale_change_sign_column_color = 1
-		let g:ale_sign_column_always = 0
-		let g:ale_sign_error = '✖'
-		let g:ale_sign_warning = '⚠'
+    Plug 'w0rp/ale' " Asynchonous linting engine
+    let g:ale_change_sign_column_color = 1
+    let g:ale_sign_column_always = 0
+    let g:ale_sign_error = '✖'
+    let g:ale_sign_warning = '⚠'
+    let g:ale_set_highlights = 0
 
 		let g:ale_linters = {
 		\	'javascript': ['eslint'],

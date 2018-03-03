@@ -465,11 +465,11 @@ call plug#begin('~/.config/nvim/plugged')
     let g:ale_sign_warning = '⚠'
     let g:ale_set_highlights = 0
 
-		let g:ale_linters = {
-		\	'javascript': ['eslint'],
-		\	'typescript': ['tsserver', 'tslint'],
-		\	'html': []
-		\}
+    let g:ale_linters = {
+    \	'javascript': ['eslint'],
+    \	'typescript': ['tsserver', 'tslint'],
+    \	'html': []
+    \}
 	" }}}
 
 	" UltiSnips {{{

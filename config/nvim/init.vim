@@ -472,10 +472,12 @@ call plug#begin('~/.config/nvim/plugged')
     \}
 	" }}}
 
-	" UltiSnips {{{
-		Plug 'SirVer/ultisnips' " Snippets plugin
-		let g:UltiSnipsExpandTrigger="<tab>"
-	" }}}
+  " UltiSnips {{{
+    Plug 'SirVer/ultisnips' " Snippets plugin
+    let g:UltiSnipsExpandTrigger="<c-i>"
+    let g:UltiSnipsJumpForwardTrigger="<c-b>"
+    let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+  " }}}
 
 	" Deoplete {{{
 		Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }

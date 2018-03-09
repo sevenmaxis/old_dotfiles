@@ -592,7 +592,7 @@ call plug#begin('~/.config/nvim/plugged')
   let g:SuperTabDefaultCompletionType = "<c-n>"
 
   Plug 'christoomey/vim-tmux-navigator'
-  Plug 'sjl/vitality.vim'
+  Plug 'sjl/vitality.vim' " Make Vim play nicely with iTerm 2 and tmux
 " }}}
 
 call plug#end()

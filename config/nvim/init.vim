@@ -479,7 +479,7 @@ call plug#begin('~/.config/nvim/plugged')
     let g:UltiSnipsJumpBackwardTrigger="<c-z>"
   " }}}
 
-	" Deoplete {{{
+	" Deoplete - asynchronous completion framework {{{
 		Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 		let g:deoplete#enable_at_startup = 1
 	" }}}

@@ -579,6 +579,10 @@ call plug#begin('~/.config/nvim/plugged')
     autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=3 shiftwidth=3
 	" }}}
 
+  " Rust {{{
+    Plug 'sebastianmarkow/deoplete-rust' " Rust completion for Deoplete via Racerv
+  " }}}
+
 	Plug 'timcharper/textile.vim', { 'for': 'textile' }
 	Plug 'lambdatoast/elm.vim', { 'for': 'elm' }
 	Plug 'tpope/vim-endwise', { 'for': 'ruby' }

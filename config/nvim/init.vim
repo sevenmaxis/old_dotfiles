@@ -22,6 +22,20 @@ call plug#begin('~/.config/nvim/plugged')
   cabbrev E Explore
   cabbrev V Vexplore
 
+  " improove key navigation usability
+  nnoremap k kzz
+  nnoremap j jzz
+  nnoremap p pzz
+  nnoremap P Pzz
+  nnoremap G Gzz
+  nnoremap x xzz
+  inoremap <ESC> <ESC>zz
+  nnoremap <ENTER> <ENTER>zz
+  inoremap <ENTER> <ENTER><ESC>zza
+  nnoremap o o<ESC>zza
+  nnoremap O O<ESC>zza
+  nnoremap a a<ESC>zza
+
   set nohidden
 
   " Turn Off Swap Files

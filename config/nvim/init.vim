@@ -86,7 +86,6 @@ call plug#begin('~/.config/nvim/plugged')
   " error bells
   set noerrorbells
   set visualbell
-  set t_vb=
   set tm=500
 " }}}
 
